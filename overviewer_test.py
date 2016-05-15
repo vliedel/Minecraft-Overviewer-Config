@@ -38,7 +38,7 @@ renders["end"] = {
 	"rendermode": end_smooth_lighting,
 	"dimension": "end",
 	"markers": [
-		dict(name="Signs", filterFunction=signFilter, createInfoWindow=False, checked=True)
+		dict(name="Signs", filterFunction=signFilter, createInfoWindow=False, checked=True),
 		dict(name="Players", filterFunction=playerIcons, createInfoWindow=False, checked=True),
 	],
 	"poititle": "Overlays",
@@ -53,7 +53,7 @@ renders["end"] = {
 #	"rendermode": nether_smooth_lighting,
 #	"dimension": "overworld",
 #	"markers": [
-#		dict(name="Signs", filterFunction=signFilter, createInfoWindow=False, checked=True)
+#		dict(name="Signs", filterFunction=signFilter, createInfoWindow=False, checked=True),
 #		dict(name="Players", filterFunction=playerIcons, createInfoWindow=False, checked=True),
 #	],
 #	"poititle": "Overlays",

@@ -39,7 +39,7 @@ renders["end"] = {
 #	"rendermode": [ClearBase(), BiomeOverlay()],
 	"dimension": "end",
 	"markers": [
-		dict(name="Signs", filterFunction=signFilter, createInfoWindow=False, checked=True)
+		dict(name="Signs", filterFunction=signFilter, createInfoWindow=False, checked=True),
 		dict(name="Players", filterFunction=playerIcons, createInfoWindow=False, checked=True),
 	],
 #	"poititle": "Overlays",
@@ -53,7 +53,7 @@ renders["promisedland-day"] = {
 	"rendermode": smooth_lighting,
 	"dimension": "DIM20",
 	"markers": [
-		dict(name="Signs", filterFunction=signFilter, createInfoWindow=False, checked=True)
+		dict(name="Signs", filterFunction=signFilter, createInfoWindow=False, checked=True),
 		dict(name="Players", filterFunction=playerIcons, createInfoWindow=False, checked=True),
 	],
 #	"poititle": "Overlays",
@@ -64,7 +64,10 @@ renders["promisedland-day"] = {
 #	"title": "Promised Land - Night",
 #	"rendermode": smooth_night,
 #	"dimension": "DIM20",
-#	"markers": [dict(name="Players", filterFunction=playerIcons, createInfoWindow=False, checked=True)],
+#	"markers": [
+#		dict(name="Signs", filterFunction=signFilter, createInfoWindow=False, checked=True),
+#		dict(name="Players", filterFunction=playerIcons, createInfoWindow=False, checked=True),
+#	],
 #	"poititle": "Overlays",
 #	"showspawn": False,
 #}
@@ -75,7 +78,7 @@ renders["overworld-day"] = {
 	"rendermode": smooth_lighting,
 	"dimension": "overworld",
 	"markers": [
-		dict(name="Signs", filterFunction=signFilter, createInfoWindow=False, checked=True)
+		dict(name="Signs", filterFunction=signFilter, createInfoWindow=False, checked=True),
 		dict(name="Players", filterFunction=playerIcons, createInfoWindow=False, checked=True),
 	],
 #	"poititle": "Overlays",
@@ -89,7 +92,7 @@ renders["overworld-day-2"] = {
 	"rendermode": smooth_lighting,
 	"dimension": "overworld",
 	"markers": [
-		dict(name="Signs", filterFunction=signFilter, createInfoWindow=False, checked=True)
+		dict(name="Signs", filterFunction=signFilter, createInfoWindow=False, checked=True),
 		dict(name="Players", filterFunction=playerIcons, createInfoWindow=False, checked=True),
 	],
 #	"poititle": "Overlays",
@@ -103,7 +106,7 @@ renders["nether"] = {
 	"rendermode": nether_smooth_lighting,
 	"dimension": "nether",
 	"markers": [
-		dict(name="Signs", filterFunction=signFilter, createInfoWindow=False, checked=True)
+		dict(name="Signs", filterFunction=signFilter, createInfoWindow=False, checked=True),
 		dict(name="Players", filterFunction=playerIcons, createInfoWindow=False, checked=True),
 	],
 #	"poititle": "Overlays",
