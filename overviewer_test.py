@@ -1,4 +1,5 @@
 worlds["lastingland"] = "/home/minecraft/mc/lastingland"
+texturepath = "/home/minecraft/textures"
 outputdir = "/var/www/html/overviewer-test"
 processes = 1
 
