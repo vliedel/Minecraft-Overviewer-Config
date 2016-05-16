@@ -9,19 +9,24 @@ def signFilter(poi):
 		# Signs have Text1 - Text4
 		if (poi['Text1'].startswith("[home]")):
 			poi["icon"] = "icons/marker_tower.png"
-			return "\n".join([poi['Text1'], poi['Text2'], poi['Text3'], poi['Text4']])
+			#return "\n".join([poi['Text1'], poi['Text2'], poi['Text3'], poi['Text4']])
+			return "\n".join([poi['Text2'], poi['Text3'], poi['Text4']])
 		if (poi['Text1'].startswith("[farm]")):
 			poi["icon"] = "icons/marker_factory_red.png"
-			return "\n".join([poi['Text1'], poi['Text2'], poi['Text3'], poi['Text4']])
+			#return "\n".join([poi['Text1'], poi['Text2'], poi['Text3'], poi['Text4']])
+			return "\n".join([poi['Text2'], poi['Text3'], poi['Text4']])
 		if (poi['Text1'].startswith("[claim]")):
 			poi["icon"] = "icons/marker_mine_red.png"
-			return "\n".join([poi['Text1'], poi['Text2'], poi['Text3'], poi['Text4']])
+			#return "\n".join([poi['Text1'], poi['Text2'], poi['Text3'], poi['Text4']])
+			return "\n".join([poi['Text2'], poi['Text3'], poi['Text4']])
 		if (poi['Text1'].startswith("[waypoint]")):
 #			poi["icon"] = ""
-			return "\n".join([poi['Text1'], poi['Text2'], poi['Text3'], poi['Text4']])
+			#return "\n".join([poi['Text1'], poi['Text2'], poi['Text3'], poi['Text4']])
+			return "\n".join([poi['Text2'], poi['Text3'], poi['Text4']])
 		if (poi['Text1'].startswith("[city]")):
 			poi["icon"] = "icons/marker_town.png"
-			return "\n".join([poi['Text1'], poi['Text2'], poi['Text3'], poi['Text4']])
+			#return "\n".join([poi['Text1'], poi['Text2'], poi['Text3'], poi['Text4']])
+			return "\n".join([poi['Text2'], poi['Text3'], poi['Text4']])
 		return None
 
 def playerIcons(poi):
