@@ -37,45 +37,8 @@ def playerIcons(poi):
 end_lighting = [Base(), EdgeLines(), Lighting(strength=0.5)]
 end_smooth_lighting = [Base(), EdgeLines(), SmoothLighting(strength=0.5)]
 
-renders["end"] = {
-	"world": "lastingland",
-	"title": "The End",
-	"rendermode": end_smooth_lighting,
-#	"rendermode": [ClearBase(), BiomeOverlay()],
-	"dimension": "end",
-	"markers": [
-		dict(name="Signs", filterFunction=signFilter, createInfoWindow=False, checked=True),
-		dict(name="Players", filterFunction=playerIcons, createInfoWindow=False, checked=True),
-	],
-#	"poititle": "Overlays",
-	"showspawn": False,
-}
 
 
-renders["promisedland-day"] = {
-	"world": "lastingland",
-	"title": "Promised Land - Day",
-	"rendermode": smooth_lighting,
-	"dimension": "DIM20",
-	"markers": [
-		dict(name="Signs", filterFunction=signFilter, createInfoWindow=False, checked=True),
-		dict(name="Players", filterFunction=playerIcons, createInfoWindow=False, checked=True),
-	],
-#	"poititle": "Overlays",
-	"showspawn": False,
-}
-#renders["promisedland-night"] = {
-#	"world": "lastingland",
-#	"title": "Promised Land - Night",
-#	"rendermode": smooth_night,
-#	"dimension": "DIM20",
-#	"markers": [
-#		dict(name="Signs", filterFunction=signFilter, createInfoWindow=False, checked=True),
-#		dict(name="Players", filterFunction=playerIcons, createInfoWindow=False, checked=True),
-#	],
-#	"poititle": "Overlays",
-#	"showspawn": False,
-#}
 
 renders["overworld-day"] = {
 	"world": "lastingland",
@@ -118,3 +81,42 @@ renders["nether"] = {
 	"showspawn": False,
 }
 
+renders["end"] = {
+	"world": "lastingland",
+	"title": "The End",
+	"rendermode": end_smooth_lighting,
+#	"rendermode": [ClearBase(), BiomeOverlay()],
+	"dimension": "end",
+	"markers": [
+		dict(name="Signs", filterFunction=signFilter, createInfoWindow=False, checked=True),
+		dict(name="Players", filterFunction=playerIcons, createInfoWindow=False, checked=True),
+	],
+#	"poititle": "Overlays",
+	"showspawn": False,
+}
+
+renders["promisedland-day"] = {
+	"world": "lastingland",
+	"title": "Promised Land - Day",
+	"rendermode": smooth_lighting,
+	"dimension": "DIM20",
+	"markers": [
+		dict(name="Signs", filterFunction=signFilter, createInfoWindow=False, checked=True),
+		dict(name="Players", filterFunction=playerIcons, createInfoWindow=False, checked=True),
+	],
+#	"poititle": "Overlays",
+	"showspawn": False,
+}
+
+#renders["promisedland-night"] = {
+#	"world": "lastingland",
+#	"title": "Promised Land - Night",
+#	"rendermode": smooth_night,
+#	"dimension": "DIM20",
+#	"markers": [
+#		dict(name="Signs", filterFunction=signFilter, createInfoWindow=False, checked=True),
+#		dict(name="Players", filterFunction=playerIcons, createInfoWindow=False, checked=True),
+#	],
+#	"poititle": "Overlays",
+#	"showspawn": False,
+#}
