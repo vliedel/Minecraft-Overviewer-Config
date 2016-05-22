@@ -26,7 +26,8 @@ def signFilter(poi):
 
 def playerIcons(poi):
 	if poi['id'] == 'Player':
-		poi['icon'] = "http://overviewer.org/avatar/%s" % poi['EntityId']
+#		poi['icon'] = "http://overviewer.org/avatar/%s" % poi['EntityId']
+		poi['icon'] = "https://minotar.net/body/%s/24" % poi['EntityId']
 		return "%s" % poi['EntityId']
 
 end_lighting = [Base(), EdgeLines(), Lighting(strength=0.5)]
